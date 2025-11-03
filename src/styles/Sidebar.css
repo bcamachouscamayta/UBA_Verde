@@ -1,0 +1,67 @@
+/* src/styles/Sidebar.css */
+
+.main-sidebar {
+    width: 300px; /* Ancho fijo para la barra lateral */
+    min-width: 250px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    overflow-y: auto; /* Permite desplazamiento si hay muchos elementos */
+    border-right: 1px solid #ddd;
+}
+
+.main-sidebar h2, .main-sidebar h3 {
+    color: #004d40;
+}
+/* ... agrega más estilos para filtros y lista de locaciones */
+
+/* src/styles/sidebar.css */
+
+/* Estilos del contenedor principal (conectado al 'main-sidebar' en JSX) */
+.main-sidebar {
+    width: 300px; /* Define el ancho de la barra lateral */
+    min-width: 280px; /* Asegura un tamaño mínimo si la pantalla es pequeña */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para separarla del mapa */
+    overflow-y: auto; /* Permite el desplazamiento vertical si hay mucho contenido */
+    height: 100%; /* Ocupa toda la altura del contenedor padre (content-container) */
+    box-sizing: border-box; /* Incluye padding y borde dentro del ancho y alto */
+}
+
+/* Estilos para las secciones internas */
+.sidebar-section {
+    margin-bottom: 25px; /* Espacio entre secciones */
+}
+
+.sidebar-section h3, .sidebar-section h4 {
+    color: #004d40; /* Un color institucional para los títulos */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* Estilos de los elementos de filtro */
+.filter-item {
+    display: block; /* Cada filtro en una nueva línea */
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+/* Estilos para la lista de locaciones */
+.location-list {
+    list-style: none; /* Elimina los puntos predeterminados */
+    padding: 0;
+    margin-top: 10px;
+}
+
+.location-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    color: #333;
+}
+
+.location-list li:hover {
+    color: #ff6f00; /* Color de interacción al pasar el ratón */
+    cursor: pointer;
+}

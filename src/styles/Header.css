@@ -1,0 +1,26 @@
+/* src/styles/Header.css */
+
+.main-header {
+    background-color: #004d40; /* Color verde oscuro (ejemplo) */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea el título a la izq y el botón a la der */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.exit-button {
+    /* Estilos del botón de salir */
+    padding: 8px 15px;
+    background-color: #ff6f00; /* Color naranja (ejemplo) */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

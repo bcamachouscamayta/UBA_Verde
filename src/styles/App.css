@@ -1,0 +1,64 @@
+/* src/styles/App.css */
+
+.App {
+    display: flex;
+    flex-direction: column; /* Apila el header arriba y el contenido abajo */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-grow: 1; /* Permite que ocupe todo el espacio restante */
+}
+
+.map-view {
+    flex-grow: 1; /* Asegura que el mapa ocupe todo el espacio sobrante */
+}
+
+/* src/styles/App.css */
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8; /* El color de fondo general de la aplicación */
+    align-items: center; /* Centra el contenido principal */
+}
+
+/* Contenedor que maneja el ancho central de toda la aplicación */
+.main-content-scroll {
+    width: 430px; /* Ancho fijo o máximo de la aplicación, como indica el diseño (punto 4) */
+    background-color: white; /* El fondo blanco del cuerpo de la aplicación */
+    padding: 0 20px 20px 20px; /* Padding a los lados, dejando el Header y Footer fuera si son full-width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra sutil si quieres simular un dispositivo */
+    /* Asegúrate que el contenido pueda scrollear */
+    overflow-y: auto; 
+    height: 100%;
+}
+
+/* Estilos para el contenedor del Mapa (punto 7) */
+.map-container {
+    margin: 20px 0;
+    /* Ajusta el ancho al diseño (390px - 20px padding izquierdo - 20px padding derecho) */
+    width: 100%; 
+    /* El mapa tendrá un border-radius y un alto fijo */
+}
+
+/* Estilos para la sección de Noticias (punto 10, 11) */
+.news-section {
+    padding-top: 10px;
+    padding-bottom: 50px; /* Espacio antes del footer si existe */
+}
+
+.news-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-paragraph {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
